@@ -1,0 +1,44 @@
+ <nav class="navbar navbar-expand-lg bg-body-light border-bottom">
+  <div class="container-fluid">
+    <!-- Brand -->
+    <a class="navbar-brand" href="/"><i class="fa-solid fa-anchor"></i></a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <!-- Left-aligned nav -->
+      <div class="navbar-nav me-auto">
+        <a class="nav-link" href="/listings">Explore</a>
+        <a class="nav-link" href="/listings/new">Be the Host</a>
+      </div>
+
+       <div class="navbar-brand mx-auto text-center d-flex align-items-center gap-2">
+      <span class="wayaway-title">WayAway</span>
+      <i class="fa-solid fa-anchor wayaway-icon"></i>
+    </div>
+
+      <div class="navbar-nav ms-auto d-flex align-items-center">
+  <form class="d-flex" role="search" action="/listings/search" method="get">
+    <input name="q"class="form-control me-2" type="search" placeholder="Search destinations" aria-label="Search" />
+    <button class="btn btn-search" type="submit">
+      <i class="fas fa-search"></i>Search
+    </button>
+  </form>
+</div>
+
+<div class="navbar-nav ms-3">
+  <% if (!currUser) { %>
+    <a class="nav-link" href="/signup"><b>Signup</b></a>
+    <a class="nav-link" href="/login"><b>Login</b></a>
+  <% } else { %>
+    <a class="nav-link" href="/logout"><b>Logout</b></a>
+  <% } %>
+</div>
+    </div>
+  </div>
+</nav>

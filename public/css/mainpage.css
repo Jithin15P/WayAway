@@ -1,0 +1,253 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100vw;
+      min-height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    /* page-1 */
+    .container {
+      width: 100%;
+      height: 100vh;
+      font-family: "Neue Montreal", sans-serif;
+      text-transform: uppercase;
+      background: #e3e3e3;
+      position: relative;
+    }
+
+    nav, footer {
+      position: absolute;
+      padding: 2em;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    footer {
+      bottom: 0;
+    }
+
+    nav a, footer a {
+      text-decoration: none;
+      color: inherit;
+      padding: 2em;
+      cursor: pointer;
+    }
+
+    .header {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 75%;
+      text-align: center;
+    }
+
+    .placeholder {
+      font-family: 'Bespoke Stencil', sans-serif;
+      color: #000;
+      font-size: 110px;
+      line-height: 2.25;
+    }
+
+    p {
+      text-align: center;
+      font-size: 12px;
+    }
+
+    #go-home-btn, #learn-more-btn {
+      margin-top: 1.5em;
+      padding: 0.75em 1.5em;
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      background-color: black;
+      color: white;
+      border: 2px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
+    }
+
+    #go-home-btn:hover, #learn-more-btn:hover {
+      background-color: #333;
+    }
+    .button-row {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.button-row form {
+  margin: 0;
+}
+
+/* page-2 */
+    #page2 {
+      min-height: 100vh;
+      width: 100%;
+      background-color: #000;
+      color: #e3e3e3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4em 2em;
+    }
+
+    #page2 .content {
+      max-width: 800px;
+      text-align: center;
+      font-family:'Bespoke Stencil', sans-serif;
+      line-height: 1.8;
+    }
+
+    #page2 p{
+      font-size: 2.0rem;
+      margin-top: 0.75em;
+    }
+/* page-3 */
+    #page3 {
+    min-height: 100vh;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 2em;
+    z-index: 0;
+    position: relative;
+  }
+
+  #page3 .content {
+    max-width: 800px;
+    text-align: center;
+    font-family: 'Neue Montreal', sans-serif;
+  }
+
+     img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .sticky-cards {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #e3e3e3;
+  }
+
+  .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+    height: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+  }
+
+  .card-img {
+    width: 100%;
+    height: 100%;
+    transition: width 0.8s ease, height 0.8s ease;
+  }
+
+  .card-content {
+    margin-top: 1em;
+  }
+
+  .card-content p {
+    font-size: 1.5rem;
+    font-family: 'Bespoke Stencil', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+  }
+
+  @media (max-width: 900px) {
+    .card {
+      width: 75vw;
+      height: 75vw;
+    }
+  }
+
+   .footer-page {
+    width: 100vw;
+    min-height: 40vh;
+    background-color: #fff;
+    padding: 2em;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2em;
+  }
+
+  .footer-column h4 {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-column li {
+    margin-bottom: 0.25em;
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .footer-links a,
+  .footer-social a {
+    margin-right: 1em;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.875rem;
+  }
+
+   #scrollTopBtn {
+    position: fixed;
+    bottom: 1em;
+    left: 1em;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 999;
+    display: none;
+  }
+ 

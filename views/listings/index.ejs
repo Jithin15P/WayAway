@@ -1,0 +1,86 @@
+<%-layout("/layouts/boilerplate")%>
+<body>
+    <div id="filter">
+        <div class="filter">
+            <i class="fa-solid fa-fire"></i>
+            <p>Trending</p>
+        </div>
+        <div class="filter">
+            <i class="fa-solid fa-snowflake"></i>
+            <p>Winter</p>
+        </div>
+        <div class="filter">
+           <i class="fa-solid fa-umbrella-beach"></i>
+            <p>Beach</p>
+        </div>
+         <div class="filter">
+          <i class="fa-solid fa-mountain-sun"></i>
+             <p>Mountains</p>
+        </div>
+         <div class="filter">
+        <i class="fa-solid fa-ship"></i>
+             <p>Boating</p>
+        </div> <div class="filter">
+        <i class="fa-solid fa-shuttle-space"></i>
+            <p>Space</p>
+        </div>
+         <div class="filter">
+           <i class="fa-solid fa-spa"></i>
+             <p>Spa</p>
+        </div>
+         <div class="filter">
+         <i class="fa-solid fa-utensils"></i>
+            <p>Foodies fav</p>
+        </div>
+        <div class="filter">
+         <i class="fa-solid fa-binoculars"></i>
+            <p>Trucking</p>
+        </div>
+        <div class="filter">
+        <i class="fas fa-city"></i>
+            <p>Iconic cities</p>
+        </div>
+        <div class="filter">
+         <i class="fab fa-fort-awesome"></i>
+            <p>Castles</p>
+        </div>
+         <div class="filter">
+        <i class="fas fa-campground"></i>
+            <p>Camping</p>
+        </div>
+         <div class="filter">
+         <i class="fas fa-swimmer"></i>
+            <p>Pool</p>
+        </div>
+        
+
+        <div class="button">
+             <button id="learn-more-btn">
+    <i class="fa-solid fa-headset"></i> Customer Support
+  </button>
+        </div>
+   
+    </div>
+    <h3 class="mt-3"> All Listings</h3>
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+            <% for(let listing of allListing ){%> 
+              <a href="/listings/<%=listing._id%>"class="listing-link"> 
+            <div class=" card listing-card col">
+                <div>
+                    <img src="<%=listing.image.url%>" class="card-img-top" alt="..." style="height: 20rem;">
+                    <div class="card-img-overlay"><%=listing.title%></div> 
+                </div>
+          
+            <div class="card-body">
+            <h5 class="card-title"><%=listing.title%></h5>
+            <p class="card-text">&#8377; <%=listing.price.toLocaleString("en-IN")%> /night</p>
+            </div>
+            </div>
+            </a>   
+            <%}%>
+    </div> 
+    
+    <button id="scrollTopBtn" onclick="scrollToTop()">&#8593;</button>
+    </div>
+</body>
+</html>
