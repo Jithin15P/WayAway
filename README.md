@@ -23,16 +23,16 @@
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🧑‍💼 **User authentication** (Register / Login / Logout)
-- 🏨 **Create, edit, delete hotel listings**
-- 🖼️ **Upload hotel images** via Cloudinary
-- 📍 **Map integration** using Mapbox
-- ⭐ **Leave reviews** with ratings
-- 🧑‍✈️ **Access control** (Only owners can edit/delete their listings)
-- 🔍 **Search listings** by location or keyword
-- 📱 **Mobile responsive** design
+-  **User authentication** (Register / Login / Logout)
+-  **Create, edit, delete hotel listings**
+-  **Upload hotel images** via Cloudinary
+-  **Map integration** using Mapbox
+-  **Leave reviews** with ratings
+-  **Access control** (Only owners can edit/delete their listings)
+-  **Search listings** by location or keyword
+-  **Mobile responsive** design
 
 ---
 
