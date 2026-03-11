@@ -6,7 +6,7 @@
 
 ## 🔗 Live Demo
 
-🌐 **Try it now**:  https://wayaway-production.up.railway.app/
+ **Try it now**:  https://wayaway-production.up.railway.app/
  
 
 ---
@@ -36,7 +36,7 @@
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 ### Frontend
 - EJS (Templating Engine)
