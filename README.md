@@ -1,4 +1,4 @@
- # ⚓ WayAway — Hotel Booking Platform
+ # ⚓ WayAway  Hotel Booking Platform
 
 **WayAway** is a full-stack hotel booking web application that enables users to discover, list, and review hotels from across India and around the world. Designed with a clean interface and powerful backend, WayAway makes it simple for travelers to explore stays and for hosts to manage their properties with ease.
 
@@ -6,7 +6,7 @@
 
 ## 🔗 Live Demo
 
-🌐 **Try it now**: https://wayaway.onrender.com/  
+🌐 **Try it now**:  https://wayaway-production.up.railway.app/
  
 
 ---
